@@ -1,0 +1,207 @@
+:root {
+    --red: #ff7978;
+    --blue: #5d54a3;
+    --green: hsl(154, 59%, 51%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
+}
+
+body {
+    background: var(--red) url(assets/images/bg-intro-desktop.png);
+    background-repeat: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+header {
+    max-width: 50%;
+    float: left;
+    margin: 200px 0;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.divForm {
+    max-width: 50%;
+    float: right;
+    margin: 90px 0;
+}
+
+.span {
+    background-color: var(--blue);
+    color: #e3e2e2;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 22px;
+    font-size: 13px;
+    border-radius: 8px;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.162);
+}
+
+.span  strong{
+    color: #ffffff;
+    font-size: 14px;
+}
+
+form {
+    background-color: #fff;
+    padding: 2rem;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 7px rgba(0, 0, 0, 0.079);
+}
+
+form input {
+    display: block;
+    padding: 1rem;
+    margin: 15px 0;
+    width: 100%;
+    border-radius: 5px;
+    color: #828282;
+    border: 1px solid #cccccc;
+    font-weight: bold;
+}
+
+button {
+    background-color: var(--green);
+    color: #fff;
+    padding: 1em;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px hsl(154, 56%, 45%);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(154, 81%, 65%);
+}
+
+.terms {
+    color: #bdbdbd;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.terms a {
+    color: var(--red);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.attribution {
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    clear: both;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+
+.errorIcon {
+    background-image: url(assets/images/icon-error.svg);
+    background-position: 95%;
+    background-repeat: no-repeat;
+}
+
+.info {
+    color: var(--red);
+    font-size: 9px;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    text-align: right;
+    font-weight: 600;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+input[class="errorIcon"] {
+    border: 2px solid var(--red);
+}
+
+#popUp {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #888;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+    background-color: white;
+    color: hsl(154, 56%, 36%);
+    padding: 45px;
+    text-align: center;
+}
+
+#close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: var(--red);
+    color: #fff;
+    width: 30px;
+}
+
+@media (max-width: 798px) {
+
+    .container {
+        max-width: 80%;
+    }
+
+    .divForm, header {
+        clear: both;
+        width: 100%;
+        margin: 30px 0px;
+    }
+
+    .divForm {
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    header {
+        max-width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    header > h1 {
+        font-size: 30px;
+    }
+
+    .terms {
+        font-size: 11px;
+    }
+}
+
+
+
+
